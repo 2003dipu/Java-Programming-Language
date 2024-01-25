@@ -1,0 +1,4 @@
+This is an example of speech synthesis in English.
+This prints a new line.
+Uh, oh. This file has been overwritten. Have a nice day. See ya
+
