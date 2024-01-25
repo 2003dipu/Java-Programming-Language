@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ButtonBar layoutX="184.0" layoutY="33.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" text="Bopa" />
+        </buttons>
+      </ButtonBar>
+      <Button defaultButton="true" layoutX="311.0" layoutY="380.0" mnemonicParsing="false" text="Dipu" />
+      <Button layoutX="59.0" layoutY="206.0" mnemonicParsing="false" text="Huna" />
+      <Button layoutX="532.0" layoutY="206.0" mnemonicParsing="false" text="Singha" />
+      <Circle fill="#ff1f76" layoutX="311.0" layoutY="231.0" radius="100.0" strokeType="INSIDE">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+   </children>
+</AnchorPane>
