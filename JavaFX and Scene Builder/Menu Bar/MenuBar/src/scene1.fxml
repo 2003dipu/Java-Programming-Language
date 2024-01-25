@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <MenuBar layoutX="-4.0" layoutY="2.0" prefHeight="30.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newMethod" text="New">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="N" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <CheckMenuItem mnemonicParsing="false" text="AutoSave" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#share" text="Share">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Messenger">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="S" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" text="SMS" />
+                  <MenuItem mnemonicParsing="false" text="Twitter" />
+                  
+                  <MenuItem mnemonicParsing="false" text="Email" />
+                  <MenuItem mnemonicParsing="false" text="WhatsApp" />
+              </items>
+               <accelerator>
+                  <KeyCodeCombination alt="DOWN" code="S" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="DevTools" />
+                  <MenuItem mnemonicParsing="false" text="Developer Mood" />
+                  <MenuItem mnemonicParsing="false" text="Others" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Copy Page">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#copyEntirePage" text="Copy this entire page">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="C" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Dark Mode">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Modern Dark">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="theme" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" selected="true" text="Dracula" toggleGroup="$theme" />
+                  <RadioMenuItem mnemonicParsing="false" text="Black" toggleGroup="$theme" />
+                  <RadioMenuItem mnemonicParsing="false" text="Absolute Dark" toggleGroup="$theme" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="HelpMe">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Via Offline" />
+                  <MenuItem mnemonicParsing="false" text="Via Online" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Language">
+              <items>
+                  <RadioMenuItem mnemonicParsing="false" text="English">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="language" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <RadioMenuItem mnemonicParsing="false" selected="true" text="Bishnupriya Monipuri" toggleGroup="$language" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <RadioMenuItem mnemonicParsing="false" text="Hindi" toggleGroup="$language" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <RadioMenuItem mnemonicParsing="false" text="Bangla" toggleGroup="$language" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
