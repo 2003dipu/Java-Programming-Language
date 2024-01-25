@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ProgressBar fx:id="myProgressBar" layoutX="31.0" layoutY="93.0" prefHeight="43.0" prefWidth="554.0" progress="0.0" style="-fx-background-color: magenta;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></ProgressBar>
+      <Button fx:id="myButton" layoutX="256.0" layoutY="154.0" mnemonicParsing="false" onAction="#increaseProgress" text="increase" />
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="198.0" layoutY="33.0" prefHeight="39.0" prefWidth="225.0" text="Label" textFill="#4216d2">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="myButtonReset" layoutX="337.0" layoutY="156.0" mnemonicParsing="false" onAction="#resetProgress" text="reset" />
+   </children>
+</AnchorPane>
