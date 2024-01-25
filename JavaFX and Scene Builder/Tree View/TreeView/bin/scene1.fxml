@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <PointLight color="CHARTREUSE" layoutX="157.0" layoutY="153.0" lightOn="true" />
+      <AmbientLight color="CHARTREUSE" layoutX="237.0" layoutY="111.0" lightOn="true" />
+      <TreeView fx:id="myTreeView" layoutX="14.0" layoutY="5.0" onContextMenuRequested="#selectItem" onMouseClicked="#selectItem" prefHeight="389.0" prefWidth="312.0" />
+   </children>
+</AnchorPane>
