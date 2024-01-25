@@ -1,0 +1,21 @@
+
+Terms
+
+Tree data structures
+Definition = A Tree is a non-linear data structure where nodes are organized in a hierarchy
+
+Examples, and use cases
+    - File explorer
+    - Databases
+    - DNS (Domain Name Servers)
+    - HTML DOM (Document Object Model)
+
+    Nodes and Edges comprises a tree,
+    Parent/Child and siblings
+
+    Subtree = a smaller tree held within a larger tree
+    size of a tree = number of nodes
+    depth of a node = number of edges below the root node
+    height of a node = number of edges above furthest leaf node
+
+    
